@@ -1,0 +1,38 @@
+<head>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Atrás</a></li>
+  </ul>
+
+  <h1>Sintaxis de desestructuración</h1>
+
+  <h3>Con objetos</h3>
+
+  <pre>
+    const usuario = {
+      nombre: 'Andrés González',
+      edad: 35,
+      direccion: {
+        ciudad: 'Cali',
+        numero: '32-888'
+      }
+    }
+
+    const {
+      nombre,
+      edad,
+      direccion: {
+        ciudad: ciudadDelUsuario,
+        numero: numeroDeLaCasa
+      }
+    } = usuario
+  </pre>
+
+  <h3>Con arreglos</h3>
+
+  <pre>
+    const [a, b, , , c, ...arr] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  </pre>
+</body>

@@ -1,0 +1,37 @@
+<head>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Atrás</a></li>
+  </ul>
+
+  <h1>Herramientas nativas</h1>
+
+  <h3>Math.random()</h3>
+
+  <pre>
+    console.log(Math.random()) // Número aleatorio
+    console.log(Math.floor(Math.random() * 20)) // Número aleatorio entero. Intervalo: 0 - 19
+    console.log(
+      Math.floor(Math.random() * 10).toString() + 
+      Math.floor(Math.random() * 10).toString() + 
+      Math.floor(Math.random() * 10).toString() + 
+      Math.floor(Math.random() * 10).toString()
+    ) // Loteria
+    console.log(Math.floor(Math.random() * (50 - 40 + 1)) + 40) // Número aleatorio entero. Intervalo: 40 - 50
+  </pre>
+
+  <h3>Cambiar tipo de dato</h3>
+
+  <pre>
+    console.log(parseInt('32.25'))
+    console.log(parseInt(32.25))
+    console.log(parseInt('abc')) // NaN
+    console.log(parseInt('1001101', 2)) // Binario a entero
+    console.log(parseInt(1001101, 2)) // Binario a entero
+    console.log(parseInt('1f', 16)) // Hexadecimal a entero
+    console.log(parseFloat('32.25'))
+    console.log(String(32.25))
+  </pre>
+</body>

@@ -1,0 +1,70 @@
+<head>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Atrás</a></li>
+  </ul>
+
+  <h1>Operadores lógicos</h1>
+
+  <h3>Operador de igualdad</h3>
+
+  <pre>
+    console.log(5 == 5) // true
+    console.log(5 == 6) // false
+    console.log("Hola" == "Hola") // true
+    console.log("Hola" == "hola") // false
+    console.log("Hola" == "JavaScript") // false
+    console.log([1, 2, 3] == [1, 2, 3]) // false: Compara a los arreglos en memoria
+
+    console.log(9 == 9) // true
+    console.log(9 == "9") // true
+    console.log(9 === "9") // false: Igualdad estricta
+  </pre>
+
+  <h3>Operador de desigualdad</h3>
+
+  <pre>
+    console.log(9 != 6) // true
+    console.log(9 != 9) // false
+    console.log("JavaScript" != "JavaScript") // false
+    console.log("Hola" != "JavaScript") // true
+    console.log([1, 2, 3] != [1, 2, 3]) // true: Compara a los arreglos en memoria
+
+    console.log(9 != 9) // false
+    console.log(9 != "9") // false
+    console.log(9 !== "9") // true: Desigualdad estricta
+  </pre>
+
+  <h3>Operaores relativos</h3>
+
+  <pre>
+    console.log(6 > 5) // true
+    console.log(3 > 10) // false
+    console.log("B" > "A") // true
+    console.log("A" > "B") // false
+    console.log("ACB" > "ABC") // true
+    console.log("AB" > "A") // true
+
+    console.log(5 > 5) // false
+    console.log(5 >= 5) // true
+  </pre>
+
+  <h3>Operadores lógicos AND, OR y NOT</h3>
+
+  <pre>
+    console.log(true && true)
+    console.log(true && false)
+    console.log(false && true)
+    console.log(false && false)
+
+    console.log(true || true)
+    console.log(true || false)
+    console.log(false || true)
+    console.log(false || false)
+
+    console.log(!true)
+    console.log(!false)
+  </pre>
+</body>

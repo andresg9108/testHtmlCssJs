@@ -1,0 +1,28 @@
+<head>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Atrás</a></li>
+  </ul>
+
+  <h1>Clases</h1>
+
+  <pre>
+    class Persona{ // UpperCamelCase 
+      constructor(nombre){
+        this._nombre = nombre // _ (Propiedad privada)
+      }
+
+      set nombre(nombre){
+        this._nombre = nombre
+      }
+
+      get nombre(){
+        return this._nombre
+      }
+    }
+
+    const persona = new Persona('Andrés')
+  </pre>
+</body>

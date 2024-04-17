@@ -1,0 +1,45 @@
+<head>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Atrás</a></li>
+  </ul>
+
+  <h1>Variables y constantes</h1>
+
+  <p>Nota: JavaScript es «Case Sensitive», es decir, sensible a mayúsculas y minúsculas.</p>
+
+  <pre>
+    // camelCase: miVariable
+    var miVariable = 'Hola'
+    const miConst = 16
+    let miLet = true
+  </pre>
+
+  <h3>var vs. let</h3>
+
+  <pre>
+    var name = "Andrés"
+    var name = "Juan" // Con var la variable se puede declarar dos veces
+
+    let last_name = "González"
+    last_name = "Garcia" // Con let la variable no se puede declarar dos veces
+  </pre>
+
+  <p>Nota: let es más restringido que var en muchos contextos como los ciclos, las funciones y los condicionales.</p>
+
+  <h3>const</h3>
+
+  <pre>
+    const MI_CONSTANTE = "Hello World"
+    const PI = 3.14
+  </pre>
+
+  <p>Nota: Si asignamos una constante con un arreglo, función o objeto, no podemos reasignarlo, pero sí podremos cambiar su contenido.</p>
+
+  <script>
+    const MI_CONSTANTE = "Hello World"
+    const PI = 3.14
+  </script>
+</body>

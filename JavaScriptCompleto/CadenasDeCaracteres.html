@@ -1,0 +1,70 @@
+<head>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Atrás</a></li>
+  </ul>
+
+  <h1>Cadenas de caracteres</h1>
+
+  <h3>Comillas</h3>
+
+  <pre>
+    var miCadena = "Escapar comillas: \"Hola Mundo\""
+    miCadena = 'Secuencias de escape: "Hola Mundo"'
+    miCadena = "Otra secuencias de escape: 'Hola Mundo'"
+  </pre>
+
+  <h3>Secuencias de escape</h3>
+
+  <ul>
+    <li>\' - Comilla Simple</li>
+    <li>\" - Comilla Doble</li>
+    <li>\\ - Barra invertida</li>
+    <li>\n - Línea Nueva</li>
+    <li>\r - Retorno de Carro</li>
+    <li>\t - Tabulación</li>
+    <li>\b - Retroceso</li>
+    <li>\f - Salto de Página</li>
+  </ul>
+
+  <pre>
+    console.log("\\ Hola Mundo \\ \nDesarrollador: \"Andrés González\" \n\tHTML\n\tCSS\n\tJavaScript")
+  </pre>
+
+  <h3>Concatenación de cadenas de caracteres</h3>
+
+  <pre>
+    const nombre = "Andrés"
+    const apellido = "González"
+    var cadena = nombre + " " + apellido
+    cadena = `${nombre} ${apellido}` // Plantillas literales 
+    cadena = nombre
+    cadena += " " + apellido
+  </pre>
+
+  <h3>Operaciones con cadenas de caracteres</h3>
+
+  <pre>
+    const cadena = "Hola Mundo"
+    const tamanoDeCadena = cadena.length
+    var caracter = cadena[0] // Primer carácter 
+    caracter = cadena[2] // Tercer carácter
+    caracter = cadena[10] // undefined
+    caracter = cadena[tamanoDeCadena-1] // Último carácter
+  </pre>
+
+  <p>Nota: Las cadenas de caracteres son inmutables por lo tanto no de puede hacer algo como cadena[0] = “H”</p>
+
+  <script>
+    const cadena = "Hola Mundo"
+    const tamanoDeCadena = cadena.length
+    var caracter = cadena[0] // Primer carácter 
+    caracter = cadena[2] // Tercer carácter
+    caracter = cadena[10] // undefined
+    caracter = cadena[tamanoDeCadena-1] // Último carácter
+
+    console.log(caracter)
+  </script>
+</body>

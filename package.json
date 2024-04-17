@@ -1,0 +1,13 @@
+{
+  "name": "testhtmlcssjs",
+  "version": "0.1.0",
+  "description": "Test: HTML, CSS and Js.",
+  "scripts": {
+    "start": "live-server --port=8080"
+  },
+  "author": "Andrés González",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

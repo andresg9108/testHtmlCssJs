@@ -1,0 +1,58 @@
+<head>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Atrás</a></li>
+  </ul>
+
+  <h1>Arreglos</h1>
+
+  <pre>
+    const estudiantes = ["John", "Carlos", "David", "Oscar", "Andrés"]
+    const listaEstudiantes = [["Carlos", 25], ["Daniel", 45]]
+    const miArreglo = [30, 45, 67, 25, 25.5]
+    var miArregloMultidimensional = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+    var elemento = estudiantes[0] // Primero elemento del arreglo.
+    elemento = estudiantes[2] // Tercer elemento del arreglo.
+    const suma = miArreglo[1] + miArreglo[4]
+    miArreglo[1] = "Hola"
+    miArreglo[3] = [1, 2, 3]
+    elemento = miArregloMultidimensional[1][2]
+  </pre>
+
+  <p>Nota: Los arreglos son mutables. Lo que quiere decir que puedo hacer algo como «arregloNumeros[1] = 125».</p>
+
+  <h3>Métodos en arreglos</h3>
+
+  <pre>
+    const miArreglo = [30, 45, 67, 25, 25.5]
+
+    var elemento = miArreglo.shift() // Eliminar primero y retornarlo
+    elemento = miArreglo.pop() // Eliminar último y retornarlo
+    miArreglo.unshift(139) // Agregar principio
+    miArreglo.push(68) // Agregar al final
+
+    // Unir dos arreglos
+    const arreglo1 = [1, 2, 3, 4]
+    const arreglo2 = [5, 6, 7]
+    const arregloFinal = arreglo1.concat(arreglo2)
+
+    // Aplanar un arreglo
+    const miArregloMultidimensional = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    var resultado = miArregloMultidimensional.flat()
+
+    // Sumar los elementos de un arreglo
+    const miArreglo = [1, 2, 3, 4, 5]
+    const resultado = miArreglo.reduce((acumulador, dato) => acumulador + dato, 0)
+  </pre>
+
+  <script>
+    // Sumar los elementos de un arreglo
+    const miArreglo = [1, 2, 3, 4, 5]
+    const resultado = miArreglo.reduce((acumulador, dato) => acumulador + dato, 0)
+
+    console.log(resultado)
+  </script>
+</body>

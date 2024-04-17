@@ -1,0 +1,64 @@
+<head>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Atrás</a></li>
+  </ul>
+
+  <h1>Objetos</h1>
+
+  <pre>
+    const miPerro = {
+      nombre: 'Luna',
+      edad: 5,
+      peso: 6
+    }
+    const resultados = {
+      1: "luis1566",
+      2: "pepe5484",
+      3: "andres258",
+      4: "carlos"
+    }
+
+    const raza = 'Beagle'
+    const nombre = 'daniel698'
+    miPerro.raza = raza || ''
+    resultados[5] = nombre || ''
+
+    var cadena = miPerro.nombre
+    cadena = miPerro["raza"]
+
+    const posicion = 2
+    cadena = resultados[posicion]
+
+    delete miPerro.peso
+    delete resultados[2]
+
+    var existe = miPerro.hasOwnProperty('raza')
+    existe = resultados.hasOwnProperty(5)
+  </pre>
+
+  <h3>Objeto immutable</h3>
+
+  <pre>
+    let colores = {
+      verde: '#10e04b',
+      azul: '#1b50e0',
+      negro: '#000000',
+      blanco: '#ffffff'
+    }
+    Object.freeze(colores)
+  </pre>
+
+  <h3>Más funcionalidades de los objetos</h3>
+
+  <pre>
+    const persona = {
+      nombre: 'Andrés',
+      presentarse(){ // Método
+        return `¡Hola! Mi nombre es ${this.nombre}`
+      }
+    }
+  </pre>
+</body>

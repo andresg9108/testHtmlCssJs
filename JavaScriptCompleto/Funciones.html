@@ -1,0 +1,85 @@
+<head>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Atrás</a></li>
+  </ul>
+
+  <h1>Funciones</h1>
+
+  <pre>
+    // Función con parámetros
+    function sumar(a, b){
+      const suma = a + b
+      return suma
+    }
+
+    // Ejecutando la función con argumentos
+    console.log("Suma: " + sumar(25, 12))
+  </pre>
+
+  <h3>Variables globales y locales</h3>
+
+  <pre>
+    // Variable global
+    var miVariableGlobal = 5
+
+    function miFuncion(){
+      // Variable global para miFuncion
+      var miVariableLocal = 8
+
+      console.log(miVariableGlobal + miVariableLocal)
+    }
+  </pre>
+
+  <h3>Patrón de retorno anticipado</h3>
+
+  <pre>
+    function calcularRaizCuadrada(num){
+      if (num < 0) {
+        return undefined
+      }
+
+      return Math.sqrt(num)
+    }
+  </pre>
+
+  <h3>Funciones flecha</h3>
+
+  <pre>
+    const miFuncion = () => "Hola Mundo"
+    const sumarMas6 = (a, b) => {
+      let num = 6
+      return a + b + num
+    }
+    const incrementar = (num, valor = 1) => num + valor
+  </pre>
+
+  <h3>Operador rest</h3>
+
+  <pre>
+    const miFuncion = (...args) => args.reduce((a, b) => a + b, 0)
+
+    const miFuncion = ({
+      name,
+      ...props
+    }) => console.log(name, props)
+  </pre>
+
+  <h3>Operador spread</h3>
+
+  <pre>
+    const numeros = [1, 4, 5]
+    const sumar = (x, y, z) => x + y + z
+    const resultado  = sumar(...numeros)
+  </pre>
+
+  <script>
+    const numeros = [1, 4, 5]
+    const sumar = (x, y, z) => x + y + z
+    const resultado  = sumar(...numeros)
+
+    console.log(resultado)
+  </script>
+</body>

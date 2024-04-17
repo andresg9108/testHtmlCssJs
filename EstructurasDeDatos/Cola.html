@@ -1,0 +1,36 @@
+<head>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Atrás</a></li>
+  </ul>
+
+  <h1>Cola (Queve)</h1>
+
+  <pre>
+    var miArreglo = [1, 2, 3, 4, 5]
+
+    function proximoEnLaFila(arreglo, elemento){
+      arreglo.push(elemento)
+      return arreglo.shift()
+    }
+
+    console.log('Antes: ' + JSON.stringify(miArreglo))
+    console.log(proximoEnLaFila(miArreglo, 6))
+    console.log('Después: ' + JSON.stringify(miArreglo))
+  </pre>
+  
+  <script>
+    var miArreglo = [1, 2, 3, 4, 5]
+
+    function proximoEnLaFila(arreglo, elemento){
+      arreglo.push(elemento)
+      return arreglo.shift()
+    }
+
+    console.log('Antes: ' + JSON.stringify(miArreglo))
+    console.log(proximoEnLaFila(miArreglo, 6))
+    console.log('Después: ' + JSON.stringify(miArreglo))
+  </script>
+</body>
