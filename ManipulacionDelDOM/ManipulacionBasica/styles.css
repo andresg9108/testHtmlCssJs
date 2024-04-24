@@ -67,11 +67,29 @@ body{
   list-style-type: none;
   width: 100%;
 }
-#conteiner ul li{
+#conteiner ul .item{
   font-size: 1rem;
   font-weight: bold;
   margin: 15px 0;
   padding: 10px 0;
+  user-select: none;
+  cursor: pointer;
+  background-color: #444;
+}
+#conteiner ul .item-marron{
   background-color: #aa5822;
+}
+#conteiner ul .item-naranja{
   background-color: #ff7b0f;
+}
+#conteiner ul .item-verde{
+  color: #000;
+  background-color: rgb(0, 100, 0);
+}
+#conteiner > a{
+  color: #fff;
+  margin: 10px 5px;
+}
+#conteiner > a:hover{
+  color: green;
 }
