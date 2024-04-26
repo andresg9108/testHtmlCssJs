@@ -16,3 +16,29 @@ body{
   color: var(--text-color);
   background-color: var(--background-color);
 }
+
+.options{
+  display: flex;
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  color: #fff;
+  background: #000;
+  padding: 10px;
+  list-style-type: none;
+  filter: drop-shadow(15px 15px 20px #000)
+}
+.options li{
+  margin: 0 10px;
+}
+.options li a{
+  color: #fff;
+  text-decoration: none;
+}
+.options li a:hover{
+  color: #ff8888;
+}
