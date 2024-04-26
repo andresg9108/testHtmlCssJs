@@ -55,6 +55,7 @@ enlace.setAttribute('target', '__black')
 const item = document.querySelector('#conteiner ul li.item')
 item.classList.remove('item-marron')
 item.classList.add('item-verde')
+item.classList.toggle('item-verde')
 console.log(item.classList.contains('item-marron'))
 */
 
